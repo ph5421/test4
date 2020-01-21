@@ -1,0 +1,21 @@
+<html>
+
+<head>
+</head>
+<body>
+<script src='gifshot.js'></script>
+<script>
+gifshot.createGIF({
+  'images': ['qOwVaSN.png', 'Vo5mFZJ.gif', '2OO33vX.jpg']
+},function(obj) {
+  if(!obj.error) {
+    var image = obj.image,
+    animatedImage = document.createElement('img');
+    animatedImage.src = image;
+    document.body.appendChild(animatedImage);
+  }
+});
+</script>
+</body>
+
+</html>
